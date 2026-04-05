@@ -7,7 +7,10 @@ from sklearn.metrics import (
     confusion_matrix,
     classification_report
 )
+import sys
+import os
 
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 import matplotlib.pyplot as plt
 from sklearn.metrics import ConfusionMatrixDisplay
