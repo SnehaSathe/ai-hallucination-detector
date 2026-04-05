@@ -1,0 +1,8 @@
+import pandas as pd
+
+df = pd.DataFrame({
+    "actual": y_true,
+    "predicted": y_pred
+})
+
+df.to_csv("results.csv", index=False)
